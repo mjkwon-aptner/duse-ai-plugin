@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Build artifacts
+node_modules/
+dist/
+build/
+.cache/
+
+# User-specific files (개인 회고 데이터는 이 repo 외부에 저장됨)
+*.local
+**/private/
+
+# Claude Code local state
+.claude/local/

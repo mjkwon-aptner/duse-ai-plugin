@@ -1,0 +1,19 @@
+{
+  "name": "retrospect",
+  "version": "0.1.0",
+  "description": "매일 5문항 minimal 회고 + 방향성·comfort zone 자가검열 도구",
+  "author": {
+    "name": "두꺼비세상 AX팀",
+    "url": "https://github.com/mjkwon-aptner"
+  },
+  "repository": "https://github.com/mjkwon-aptner/duse-ai-plugin",
+  "license": "MIT",
+  "keywords": [
+    "retrospective",
+    "daily",
+    "journal",
+    "growth",
+    "ax",
+    "korean"
+  ]
+}
