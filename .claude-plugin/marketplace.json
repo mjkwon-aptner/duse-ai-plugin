@@ -10,6 +10,11 @@
       "name": "retrospect",
       "description": "매일 5문항 minimal 회고 + 방향성·comfort zone 자가검열 도구",
       "source": "./plugins/retrospect"
+    },
+    {
+      "name": "duse-connectors",
+      "description": "두꺼비세상 사내 자원(Sheets·Notion·Slack·Drive·콘솔·DB)에 자연어로 read+write 액세스하는 connectors 모음",
+      "source": "./plugins/duse-connectors"
     }
   ]
 }

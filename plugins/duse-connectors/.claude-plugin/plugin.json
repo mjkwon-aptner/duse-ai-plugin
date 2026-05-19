@@ -1,0 +1,9 @@
+{
+  "name": "duse-connectors",
+  "version": "0.1.0",
+  "description": "두꺼비세상 사내 자원(Sheets·Notion·Slack·Drive·콘솔·DB)에 Claude가 자연어로 직접 read+write 액세스. 검색이 아니라 실제 작업까지.",
+  "author": {
+    "name": "두꺼비세상 AX팀",
+    "url": "https://github.com/mjkwon-aptner"
+    }
+}

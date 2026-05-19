@@ -50,6 +50,37 @@ Claude Code에서 마켓플레이스를 추가합니다:
 
 상세 → [plugins/retrospect/](./plugins/retrospect/)
 
+### `duse-connectors` — 사내 자원 통합 액세스
+
+검색이 아니라 **실제 작업까지** — 두꺼비세상 사내 자원에 Claude가 자연어로 직접 read+write 액세스. Sheets·Notion·Slack·Drive·콘솔·DB 등 매일 쓰는 도구를 한 곳에서 묶어 처리합니다.
+
+- 멀티 Google Workspace 자동 분기 (@aptner.com / @duse.kr)
+- OAuth Loopback Flow — 첫 사용 1클릭 동의로 끝, 이후 자동 토큰 갱신
+- 사내 직원 1인1계정 (각자 본인 Google 계정으로 인증, 감사 가능)
+- skill 단위 확장 — 첫 skill `google-sheets` 시작, 향후 Notion/Slack/Drive 등 추가 예정
+
+**사용법**:
+
+```
+/plugin install duse-connectors@duse-ai-plugin
+```
+
+첫 셋업 (1회만):
+1. `pip install -r <plugin>/skills/google-sheets/scripts/requirements.txt`
+2. `python <plugin>/skills/google-sheets/scripts/auth.py` → 브라우저 자동 → 본인 회사 계정 로그인 → 끝
+
+OAuth Client (credentials JSON)는 plugin에 이미 포함되어 있어 직원이 별도로 받을 필요 없음.
+
+자연어 사용:
+```
+"이 시트 A1:D10 읽어줘: https://docs.google.com/..."
+"방금 분석 결과 새 시트로 정리해줘"
+"Sheet1 첫 행 굵게 + 회색 배경"
+"새 탭 '시나리오' 추가해서 [[...]] 써줘"
+```
+
+상세 → [plugins/duse-connectors/](./plugins/duse-connectors/)
+
 ---
 
 ## 마켓플레이스 구조
